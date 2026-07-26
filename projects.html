@@ -1,63 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Projets</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — Viviane TOUDJI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
-
 <body>
 
-<nav>
-  <h3>TOUDJI Viviane</h3>
-  <div class="links">
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="skills.html">Compétences</a>
-    <a href="projects.html">Projets</a>
-    <a href="contact.html">Contact</a>
-    <button id="theme-toggle">🌙</button>
+<header class="topbar">
+  <div class="tab-strip">
+    <div class="brand"><span class="dot3"><span></span><span></span><span></span></span><span class="name">Viviane.dev</span></div>
+    <nav class="tabs">
+      <a href="index.html" data-ext="html"><span class="ext-dot"></span>Accueil</a>
+      <a href="about.html" data-ext="md"><span class="ext-dot"></span>A propos</a>
+      <a href="skills.html" data-ext="css"><span class="ext-dot"></span>Compétences</a>
+      <a href="projects.html" data-ext="js" class="active"><span class="ext-dot"></span>Projets</a>
+      <a href="contact.html" data-ext="html"><span class="ext-dot"></span>Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Changer de thème"></button>
   </div>
-</nav>
+</header>
 
-<section>
-  <h2>Mes Projets personnels</h2>
-  <div class="project-grid">
-    <div class="card project-card">
-      <img src="ccm.PNG" alt="Simple page web">
-      <h3>Page Web Simple</h3>
-      <p>Première réalisation en développement web.</p>
-      <a href=" https://viviantoud-art.github.io/chic-merveille/"><button>voir la page</button></a>
-    </div>
+<main>
+  <section>
+    <span class="eyebrow">Projets</span>
+    <h1>Mes projets</h1>
+    <p style="max-width:600px;">Une sélection de projets personnels et académiques, du premier site vitrine aux applications en cours de développement.</p>
+  </section>
 
-    <div class="card project-card">
-      <img src="kpop2.png" alt="Application musique KPOP">
-      <h3>Application Musique K-POP</h3>
-      <p>Projet personnel de plateforme musicale.</p>
-    </div>
+  <section>
+    <div class="section-label"><b>Projets personnels</b></div>
+    <div class="grid-2">
 
-    
-  </div>
-  <h2>Mes projets de groupes</h2>
-  <div class="project-grid">
-    
-    <div class="card project-card">
-      <img src="clownyt.PNG" alt="clown youtube">
-      <h3>Clone d'interface de youtube</h3>
-      <p>Projet académique réalisé en première année.</p>
-      <a href=" https://viviantoud-art.github.io/clownYT/" target="_blank"><button>voir la page</button></a>
+      <div class="proj-card">
+        <div class="proj-top"><span></span><span></span><span></span><span class="fname">CM</span></div>
+        <img src="assets/ccm.PNG" alt="Page web La Chic Merveille">
+        <div class="proj-body">
+          <span class="status live">terminé</span>
+          <h3>Page web responsive — La Chic Merveille</h3>
+          <p>Ma première réalisation en développement web : une vitrine responsive pour une marque de bijoux.</p>
+          <a class="proj-link" href="https://viviantoud-art.github.io/chic-merveille/" target="_blank" rel="noopener">open site ↗</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><span></span><span></span><span></span><span class="fname">Kpop</span></div>
+        <img src="assets/kpop2.png" alt="Application musique KPOP">
+        <div class="proj-body">
+          <span class="status wip">en cours</span>
+          <h3>Application musique K-POP</h3>
+          <p>Projet personnel de plateforme musicale dédiée à la K-POP, actuellement en développement.</p>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><span></span><span></span><span></span><span class="fname">EduShare</span></div>
+        <div class="proj-body" style="padding-top:22px;">
+          <span class="status wip">en cours</span>
+          <h3>Application de téléchargement d'épreuves universitaires</h3>
+          <p>Plateforme pensée pour permettre aux étudiants d'accéder facilement à des épreuves des années précédentes.</p>
+           <a class="proj-link" href="https://github.com/viviantoud-art/EduShare" target="_blank" rel="noopener">open code ↗</a>
+        </div>
+      </div>
+
+
     </div>
-    <div class="card project-card">
-      <img src="int2.PNG" alt="Projet gestion scolaire">
-      <h3>Application Gestion Scolaire</h3>
-      <p>Projet académique en cours de développement.</p>
+  </section>
+
+  <section style="margin-bottom:0;">
+    <div class="section-label"><b>Projets de groupe / académiques</b></div>
+    <div class="grid-2">
+
+      <div class="proj-card">
+        <div class="proj-top"><span></span><span></span><span></span><span class="fname">clownyt</span></div>
+        <img src="assets/clownyt.PNG" alt="Clone de l'interface YouTube">
+        <div class="proj-body">
+          <span class="status live">terminé</span>
+          <h3>Clone de l'interface YouTube</h3>
+          <p>Projet académique réalisé en groupe durant ma première année, reproduisant l'interface de YouTube.</p>
+          <a class="proj-link" href="https://viviantoud-art.github.io/clownYT/" target="_blank" rel="noopener">open site ↗</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><span></span><span></span><span></span><span class="fname">MyScolar</span></div>
+        <img src="assets/int2.PNG" alt="Application de gestion scolaire">
+        <div class="proj-body">
+          <span class="status live">terminé</span>
+          <h3>Application de gestion scolaire</h3>
+          <p>Projet académique de groupe visant à gérer les élèves, notes et emplois du temps d'un établissement.</p>
+           <a class="proj-link" href="https://github.com/gild-YTs/MyScolar" target="_blank" rel="noopener">open code ↗</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><span></span><span></span><span></span><span class="fname">VideoClub</span></div>
+        <div class="proj-body" style="padding-top:22px;">
+          <span class="status live">terminé</span>
+          <h3>Application de vidéo-club</h3>
+          <p>Projet de gestion d'un catalogue de location de vidéos, réalisé en groupe.</p>
+          <a class="proj-link" href="https://github.com/viviantoud-art/VideoClub" target="_blank" rel="noopener">open code ↗</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><span></span><span></span><span></span><span class="fname">Assigame</span></div>
+         <img src="assets/ass.png" alt="Marketplace Assigame">
+        <div class="proj-body" style="padding-top:22px;">
+          <span class="status live">terminé</span>
+          <h3>Application de marketplace</h3>
+          <p>Projet de plateforme de mise en relation entre vendeurs et acheteurs.</p>
+          <a class="proj-link" href="https://github.com/viviantoud-art/Assigame" target="_blank" rel="noopener">open code ↗</a>
+        </div>
+      </div>
+
+     
     </div>
-  </div>
-</section>
-<canvas id="particles"></canvas>
+  </section>
+</main>
+
+<footer class="statusbar">
+  <div class="seg"><span class="ok"></span>Viviane.dev</div>
+  <div class="seg">ESGIS — Lomé, Togo</div>
+  
+</footer>
+
+<script src="script.js" defer></script>
 </body>
-
 </html>
-
 
