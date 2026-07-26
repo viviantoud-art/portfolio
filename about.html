@@ -2,57 +2,95 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>À propos - Viviane</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — Viviane Toudji</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
-
 <body>
 
-<nav>
-  <h3>TOUDJI Viviane</h3>
-  <div class="links">
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="skills.html">Compétences</a>
-    <a href="projects.html">Projets</a>
-    <a href="contact.html">Contact</a>
-    <button id="theme-toggle">🌙</button>
+<header class="topbar">
+  <div class="tab-strip">
+    <div class="brand"><span class="dot3"><span></span><span></span><span></span></span><span class="name">Viviane.dev</span></div>
+    <nav class="tabs">
+      <a href="index.html" data-ext="html"><span class="ext-dot"></span>Accueil</a>
+      <a href="about.html" data-ext="md" class="active"><span class="ext-dot"></span>A propos</a>
+      <a href="skills.html" data-ext="css"><span class="ext-dot"></span>Compétences</a>
+      <a href="projects.html" data-ext="js"><span class="ext-dot"></span>Projets</a>
+      <a href="contact.html" data-ext="html"><span class="ext-dot"></span>Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Changer de thème"></button>
   </div>
-</nav>
+</header>
 
-<div class="container">
+<main>
+  <section>
+    <span class="eyebrow">A propos</span>
     <h1>À propos de moi</h1>
+    <p style="max-width: 640px; font-size: 16px;">Je suis étudiante en 2ᵉ année de Licence Professionnelle en Intelligence Artificielle à l'ESGIS. Curieuse et sérieuse, je prends chaque opportunité d'apprentissage au sérieux et j'aime transformer une notion de cours en petit projet concret.</p>
+  </section>
 
-    <section>
-  <div class="card">
-    <h2>À propos de moi</h2>
-    <p>
-      Je suis étudiante en Intelligence Artificielle et actuellement en formation
-      développeur junior. Passionnée par la technologie, je travaille sur un projet
-      de gestion scolaire ainsi qu’une application musicale K-POP.
-    </p>
-  </div>
-
-
+  <section>
+    <span class="eyebrow">objectif professionnel</span>
     <div class="card">
-        <h2>Objectif professionnel</h2>
-        <p>
-        Devenir ingénieure en Intelligence Artificielle capable de concevoir
-        des applications intelligentes et performantes.
-        </p>
+      <h3>Devenir ingénieure en Intelligence Artificielle</h3>
+      <p>Concevoir des applications intelligentes et performantes, en combinant de solides bases en programmation, en bases de données et en logique algorithmique.</p>
     </div>
+  </section>
 
-    <div class="card">
-        <h2>Profil actuel</h2>
-        <p>
-        Développeuse junior en progression constante, avec des projets
-        académiques et personnels en cours de développement.
-        </p>
+  <section>
+    <span class="eyebrow">formation</span>
+    <div class="timeline">
+      <div class="item">
+        <span class="year">2026 · en cours</span>
+        <h3>Licence Professionnelle 2 — Intelligence Artificielle</h3>
+        <p class="sub">ESGIS</p>
+      </div>
+      <div class="item">
+        <span class="year">2025</span>
+        <h3>Licence Professionnelle 1 — Intelligence Artificielle</h3>
+        <p class="sub">ESGIS — Moyenne générale : 14,71/20</p>
+      </div>
+      <div class="item">
+        <span class="year">2024</span>
+        <h3>Baccalauréat</h3>
+        <p class="sub">FABIENNE-M — Mention Assez Bien</p>
+      </div>
+      <div class="item">
+        <span class="year">2023</span>
+        <h3>Classe de Première</h3>
+        <p class="sub">FABIENNE-M — Mention Bien</p>
+      </div>
     </div>
-</section>
-</div>
-<canvas id="particles"></canvas>
+  </section>
+
+  <section>
+    <span class="eyebrow">expérience</span>
+    <div class="card">
+      <h3>Stagiaire — Secrétariat, LA FABIENNE-M</h3>
+      <p class="sub" style="margin-bottom:10px;">2025 · Stage d'un mois</p>
+      <p>À l'issue de ma première année de licence, j'ai effectué un stage d'un mois au secrétariat de LA FABIENNE-M — une première immersion dans l'organisation administrative d'un établissement scolaire.</p>
+    </div>
+  </section>
+
+  <section style="margin-bottom:0;">
+    <span class="eyebrow">en dehors du code</span>
+    <div class="grid-3">
+      <div class="card"><h3>Lecture</h3><p>Romans et essais, pour prendre du recul et nourrir la curiosité.</p></div>
+      <div class="card"><h3>Chinois</h3><p>Apprentissage progressif d'une nouvelle langue, par goût du défi.</p></div>
+      <div class="card"><h3>Musique</h3><p>Une bonne playlist, indispensable pendant les sessions de code.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="statusbar">
+  <div class="seg"><span class="ok"></span>Viviane.dev</div>
+  <div class="seg">ESGIS — Lomé, Togo</div>
+  
+</footer>
+
+<script src="script.js" defer></script>
 </body>
-
 </html>
