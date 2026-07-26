@@ -2,66 +2,112 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Compétences - Viviane</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compétences — Viviane Toudji</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
-
 <body>
 
-<nav>
-  <h3>TOUDJI Viviane</h3>
-  <div class="links">
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="skills.html">Compétences</a>
-    <a href="projects.html">Projets</a>
-    <a href="contact.html">Contact</a>
-    <button id="theme-toggle">🌙</button>
+<header class="topbar">
+  <div class="tab-strip">
+    <div class="brand"><span class="dot3"><span></span><span></span><span></span></span><span class="name">Viviane.dev</span></div>
+    <nav class="tabs">
+      <a href="index.html" data-ext="html"><span class="ext-dot"></span>Accueil</a>
+      <a href="about.html" data-ext="md"><span class="ext-dot"></span>A propos</a>
+      <a href="skills.html" data-ext="css" class="active"><span class="ext-dot"></span>Compétences</a>
+      <a href="projects.html" data-ext="js"><span class="ext-dot"></span>Projets</a>
+      <a href="contact.html" data-ext="html"><span class="ext-dot"></span>Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Changer de thème"></button>
   </div>
-</nav>
-<section>
-  <h2>Mes Compétences</h2>
+</header>
 
-  <div class="card">
+<main>
+  <section>
+    <span class="eyebrow">Compétences</span>
+    <h1>Mes compétences</h1>
+    <p style="max-width:600px;">Des bases solides en programmation et bases de données, construites en cours et consolidées à travers mes projets personnels.</p>
+  </section>
 
-    <div class="skill">
-      <p>SQL</p>
-      <div class="skill-bar">
-        <div class="skill-level" style="width: 85%;"></div>
+  <section>
+    <span class="eyebrow">langages & outils</span>
+    <div class="card">
+      <div class="skill-row">
+        <div class="skill-top"><span>Java</span><span class="pct">Intermédiaire</span></div>
+        <div class="track"><div class="fill" data-level="70"></div></div>
+      </div>
+      <div class="skill-row" style="margin-bottom:0;">
+        <div class="skill-top"><span>SQL</span><span class="pct">Solide</span></div>
+        <div class="track"><div class="fill" data-level="85"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span>MySQL</span><span class="pct">Intermédiaire</span></div>
+        <div class="track"><div class="fill" data-level="70"></div></div>
+      </div>
+      <div class="skill-row" style="margin-bottom:0;">
+        <div class="skill-top"><span>PostgreSql</span><span class="pct">Solide</span></div>
+        <div class="track"><div class="fill" data-level="85"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span>HTML</span><span class="pct">Solide</span></div>
+        <div class="track"><div class="fill" data-level="85"></div></div>
+      </div>
+      <div class="skill-row" style="margin-bottom:0;">
+        <div class="skill-top"><span>CSS</span><span class="pct">Solide</span></div>
+        <div class="track"><div class="fill" data-level="85"></div></div>
+      </div>
+      <div class="skill-row" style="margin-bottom:0;">
+        <div class="skill-top"><span>Visual Studio Code</span><span class="pct">Solide</span></div>
+        <div class="track"><div class="fill" data-level="85"></div></div>
       </div>
     </div>
+  </section>
 
-    <div class="skill">
-      <p>JAVA</p>
-      <div class="skill-bar">
-        <div class="skill-level" style="width: 75%;"></div>
+  <section>
+    <span class="eyebrow">concepts</span>
+    <div class="card">
+      <h3>Fondamentaux en informatique</h3>
+      <div style="margin-top:12px;">
+        <span class="tag">Programmation Orientée Objet</span>
+        <span class="tag">UML</span>
+        <span class="tag">Algorithmique</span>
+        <span class="tag">Bases de données</span>
+         <span class="tag">Mérise</span>
       </div>
     </div>
+  </section>
 
-    <div class="skill">
-      <p>HTML / CSS</p>
-      <div class="skill-bar">
-        <div class="skill-level" style="width: 80%;"></div>
+  <section>
+    <span class="eyebrow">orientation ia</span>
+    <div class="card">
+      <h3>Vers l'intelligence artificielle</h3>
+      <p>Logique algorithmique appliquée et premières bases en analyse de données, dans le cadre de mon cursus à l'ESGIS.</p>
+      <div style="margin-top:12px;">
+        <span class="tag green">Logique algorithmique</span>
+        <span class="tag green">Analyse de données (niveau académique)</span>
       </div>
     </div>
+  </section>
 
-    <div class="card">
-        <h3>Concepts</h3>
-        <p>Programmation Orientée Objet (POO), UML, Algorithmes, Bases de données</p>
+  <section style="margin-bottom:0;">
+    <span class="eyebrow">soft skills</span>
+    <div class="grid-3">
+      <div class="card"><h3>Organisation</h3><p>Je structure mon travail pour avancer sereinement sur plusieurs projets à la fois.</p></div>
+      <div class="card"><h3>Esprit d'analyse</h3><p>J'aime décomposer un problème avant de me lancer dans le code.</p></div>
+      <div class="card"><h3>Autonomie</h3><p>Motivée à apprendre par moi-même, en particulier sur mes projets personnels.</p></div>
     </div>
+  </section>
+</main>
 
-    <div class="card">
-        <h3>Orientation IA</h3>
-        <p>Logique algorithmique, analyse de données (niveau académique)</p>
-    </div>
+<footer class="statusbar">
+  <div class="seg"><span class="ok"></span>Viviane.dev</div>
+  <div class="seg">ESGIS — Lomé, Togo</div>
+ 
+</footer>
 
-    <div class="card">
-        <h3>Soft Skills</h3>
-        <p>Organisation, esprit d’analyse, autonomie, apprentissage rapide</p>
-    </div>
-</div>
-</section>
-<canvas id="particles"></canvas>
+<script src="script.js" defer></script>
 </body>
 </html>
