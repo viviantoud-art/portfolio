@@ -2,34 +2,90 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Accueil - Viviane</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOUDJI Akossiwa Viviane — Étudiante en Intelligence Artificielle</title>
+<meta name="description" content="Portfolio de TOUDJI Akossiwa Viviane, étudiante en Licence Professionnelle Intelligence Artificielle à ESGIS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
-
 <body>
-<nav>
-  <h3>TOUDJI Viviane</h3>
-  <div class="links">
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="skills.html">Compétences</a>
-    <a href="projects.html">Projets</a>
-    <a href="contact.html">Contact</a>
-    <button id="theme-toggle">🌙</button>
+
+<header class="topbar">
+  <div class="tab-strip">
+    <div class="brand"><span class="dot3"><span></span><span></span><span></span></span><span class="name">Viviane.dev</span></div>
+    <nav class="tabs">
+      <a href="index.html" data-ext="html" class="active"><span class="ext-dot"></span>Accueil</a>
+      <a href="about.html" data-ext="md"><span class="ext-dot"></span>A propos</a>
+      <a href="skills.html" data-ext="css"><span class="ext-dot"></span>Compétences</a>
+      <a href="projects.html" data-ext="js"><span class="ext-dot"></span>Projets</a>
+      <a href="contact.html" data-ext="html"><span class="ext-dot"></span>Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Changer de thème"></button>
   </div>
-</nav>
+</header>
 
-<section>
-  <h1>Bonjour, je suis TOUDJI Akossiwa Viviane</h1>
-  <p>Étudiante en 2ème année Intelligence Artificielle à ESGIS, actuellement développeuse junior.</p>
-  <br>
-  <a href="CV_TOUDJI.pdf" target="_blank">
-    <button>Télécharger mon CV</button>
-  </a>
-</section>
-<canvas id="particles"></canvas>
+<main>
+  <section>
+    <div class="hero-wrap">
+      <div class="hero-side">
+        <span class="eyebrow">esgis · licence pro 2 · intelligence artificielle</span>
+        <h1>TOUDJI Akossiwa Viviane</h1>
+        <p style="font-size:16.5px; max-width: 460px;">Étudiante en 2ᵉ année de Licence Professionnelle en Intelligence Artificielle à l'ESGIS, en apprentissage constant de la programmation et des fondations de l'IA.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="assets/TOUDJI-Viviane-CV.pdf" target="_blank" rel="noopener">↓ Télécharger mon CV</a>
+          <a class="btn btn-ghost" href="projects.html">Voir mes projets →</a>
+        </div>
+      </div>
+      <div class="terminal" style="flex: 1; min-width: 300px;">
+        <div class="bar"><span></span><span></span><span></span><span class="title">Identité</span></div>
+        <div class="body">
+          <img class="tof" src="assets/photo.jpg" alt="Photo d'identité">
+        </div>
+      </div>
+     
+    </div>
 
+    <div class="netwrap">
+      <canvas id="netgraph"></canvas>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">en bref</span>
+    <div class="grid-3">
+      <div class="card">
+        <div class="stat">14,71/20</div>
+        <div class="stat-label">moyenne — L1 IA, ESGIS</div>
+      </div>
+      <div class="card">
+        <div class="stat">5</div>
+        <div class="stat-label">projets réalisés</div>
+      </div>
+      <div class="card">
+        <div class="stat">3</div>
+        <div class="stat-label">langues parlées</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-bottom: 0;">
+    <span class="eyebrow">actuellement</span>
+    <div class="card">
+      <h3>En formation — Licence Professionnelle 2, Intelligence Artificielle</h3>
+      <p>ESGIS, 2026 · En cours. Je construis en parallèle des projets web personnels (Java, MySQL, HTML/CSS) pour mettre en pratique ce que j'apprends en cours et me rapprocher du métier d'ingénieure IA.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="statusbar">
+  <div class="seg"><span class="ok"></span>Viviane.dev</div>
+  <div class="seg">ESGIS — Lomé, Togo</div>
+  
+</footer>
+
+<script src="script.js" defer></script>
 </body>
-
 </html>
+
